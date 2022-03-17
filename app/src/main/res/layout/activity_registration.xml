@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Enter Registration Details" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:inputType="text"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/CPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/Aoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Enter Area of Interest" />
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text=" I  Agree to the Terms and Condition" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already a member?Login Here "
+            android:id="@+id/gotologin"
+
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</ScrollView>

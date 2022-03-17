@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    tools:context=".CreateProjectActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/bold"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_bold" />
+
+                    <ImageButton
+                        android:id="@+id/italic"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_italic" />
+
+                    <ImageButton
+                        android:id="@+id/underline"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_underline" />
+
+                    <ImageButton
+                        android:id="@+id/strikethrough"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_strikethrough" />
+
+                    <ImageButton
+                        android:id="@+id/bullet"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_bullet" />
+
+                    <ImageButton
+                        android:id="@+id/quote"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_quote" />
+
+                    <ImageButton
+                        android:id="@+id/link"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_insert_link" />
+
+                    <ImageButton
+                        android:id="@+id/clear"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@null"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_format_clear" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:layout_width="294dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="#FFF"
+                android:hint="Project Name "/>
+            <EditText
+                android:layout_marginTop="30dp"
+                android:layout_width="294dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="#FFF"
+                android:hint="Skills Required"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:id="@+id/textArea_information"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="8"
+                android:hint="Description"
+                android:textAlignment="center"
+
+                android:scrollHorizontally="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="ADD"
+                android:background="#AAA"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
